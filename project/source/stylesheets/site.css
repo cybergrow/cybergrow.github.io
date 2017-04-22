@@ -17,7 +17,14 @@ a {
     color: rgba(#000, 0.6);
   }
 }
-
+welcome {
+  background: #7B1FA2;
+  background-image: image-url('bg.jpg');
+  background-size: cover;
+  background-blend-mode: multiply;
+  padding: 40px 0;
+  text-align: center;
+}
 .middleman-logo {
   margin-bottom: 1rem;
   width: 10rem;
