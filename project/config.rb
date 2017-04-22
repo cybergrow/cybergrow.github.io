@@ -51,3 +51,12 @@ activate :external_pipeline,
   source: ".tmp",
   latency: 1
 end
+
+activate :deploy do |deploy|
+  deploy.method = :git
+  deploy.branch = 'master'
+  deploy.build_before = true
+end
+
+
+
