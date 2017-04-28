@@ -1,0 +1,13 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import "font-awesome";
+
+@import url(//fonts.googleapis.com/css?family=Lato:300,400);
+#main {
+  opacity: 1
+}
+body {
+  font-family: "Lato", sans-serif;
+}
+
+@import "fullcalendar.css";

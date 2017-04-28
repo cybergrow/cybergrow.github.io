@@ -1,0 +1,155 @@
+---
+title: Anleitung - Freifunk Düsseldorf
+---
+
+.col-md-8
+
+  %h1 Anleitung
+
+  %p.lead
+    Die Installation unserer Software halten wir so einfach wie möglich. Die Datei
+    mit unserer Firmware kannst du an der selben Stelle hochladen, wo der
+    Hersteller Updates für dein Gerät vorgesehen hat. Um Freifunk zu nutzen, musst
+    du keine technischen Dinge einstellen.
+
+  %p.lead
+    Wenn du deinen Rechner schon einmal selbst an ein Netzwerk angeschlossen hast,
+    solltest du mit unserer Anleitung zurecht kommen. Wenn nicht, dann bringe
+    bitte deinen Router und deinen Laptop zu einem unserer Treffen mit oder frage
+    uns im Slack-Chat!
+
+  %h2 Gerät besorgen
+
+  %p 
+    Erst einmal benötigst du ein kompatibles Gerät. Handelsübliche WLAN-Router für
+    20 bis 30 Euro reichen aus, um einen Freifunk-Knoten zu betreiben. Aber bevor
+    du nun in den Laden gehst und Geld ausgibst, schau einmal in die Liste der
+    Downloads, welche Modelle mit unserer Software funktionieren.
+
+  %p
+    Jedes Modell gibt es in verschiedenen Revisionen. Die aktuellen Revisionen
+    werden meistens unterstützt. Klicke auf den den richtigen Knopf und speichere
+    die Firmware ab, dann geht's unten weiter.
+
+  %p
+    Falls du ein vorbereites Gerät bekommen hast, das du nur noch einrichten
+    musst, dann überspringe die Installation und gehe direkt zur Einrichtung.
+
+  %h2 Installation
+
+  %p
+    Mit unserer Firmware wird dein WLAN-Router zu einem Freifunk-Knoten
+    umprogrammiert. Die Installation funktioniert genau so, wie eine
+    Aktualisierung der Firmware durch eine Datei des Herstellers. Mit unserer
+    Firmware wird das Gerät umprogrammiert.
+
+  %p
+    Es gibt nicht nur viele Modelle, sondern bei den meisten davon auch
+    unterschiedliche Revisionen. Da diese recht unterschiedlich ausfallen können,
+    benötigst du die genau passende Firmware-Datei für deinen Router. Auf der
+    Unterseite deines Routers befindet sich ein Aufkleber mit der genauen
+    Bezeichnung. Dort steht zum Beispiel "TP-Link WR-841ND Rev. 9".
+
+  %p
+    Besuche nun die
+    %a( href="/download") Download-Seite
+    und lade die passende Firmware-Datei herunter.
+
+  %p
+    Schließe den Router mit dem Netzteil an eine Steckdose an und verbinde ihn mit
+    dem grauen Patchkabel zu deinem Rechner. Am Router kommt das Kabel in die
+    Buchse 1 (gelb). Wenn dein Laptop keine passende Buchse hat, brauchst du noch
+    einen USB-Netzwerkadapter.
+
+  %p
+    Nun kommt es auf den Hersteller an, wie genau man die Firmware-Datei
+    einspielen muss. Dazu gibt es normalerweise im Handbuch eine Anleitung. Bei
+    TP-Link geht man folgendermaßen vor:
+
+  %ol
+    %li
+      Besuche die Adresse
+      %a( href="http://192.168.0.1" rel="nofollow" target="_blank" )http://192.168.0.1
+    %li
+      Nun kommt eine Passwort-Abfrage. Gib für Benutzernamen und Passwort jeweils "admin" ein.
+    %li
+      Öffne "System Tools" und gehe zu "Firmware Upgrade".
+    %li
+      Drücke bei "File" auf "Datei auswählen" und suche die heruntergeladene Firmware-Datei heraus.
+    %li
+      Drücke auf "Upgrade" und im erscheinenden Fenster auf "OK".
+    %li
+      Warte, bis der Prozess beendet ist und ziehe nicht den Stecker!
+    %li
+      Wenn die Lampen am Router einmal alle gleichzeitig aufleuchten und danach ausgehen, startet das Gerät neu.
+    %li
+      Sobald die Betriebslampe ⚙  blinkt, ist das Gerät bereit zur Einrichtung.
+    
+  %h2 Einrichtung
+
+  %p
+    Nun befindet sich das Gerät im Config-Mode und erwartet einige Angaben, bevor es in Betrieb gehen kann. Als erstes verbinde es erneut mit deinem Rechner, in dem du das Patchkabel an einem Ende herausziehst und wieder einsteckst. Dadurch aktualisiert sich die Netzwerkverbindung an deinem Rechner. Dann besuche folgende Adresse:
+    %a( href="http://192.168.1.1" rel="nofollow" target="_blank" )http://192.168.1.1
+
+  %p
+    Fülle das erscheinende Formular aus. Die Angaben sind freiwillig, denn sie landen öffentlich im Netz! Wir hoffen aber, dass du einen Ort der Aufstellung und eine Kontakt-Info hinterlässt, damit Freifunker aus deiner Community dich erreichen, wenn sie das Netzwerk mit dir zusammen erweitern wollen oder dich wegen Umbaumaßnahmen erreichen müssen.
+
+  %p
+    %strong Name dieses Knotens
+    ist deine freie Wahl. Am besten, du hälst dich an eine Struktur. Wir empfehlen dir "Location-Raum-Nummer" oder ähnliches. Beispiele: "Poststraße-26-Dach", " Eris-Tempel-001", "Bolzplatz-Nord".
+
+  %p
+    %strong Mesh-VPN
+    möchtest du wahrscheinlich aktivieren. Das bedeutet, dass dein Knoten über
+    das lokale Netzwerk einen Tunnel zu einem unserer Server aufbaut. Über
+    diesen verbindet sich deine Location mit dem Freifunk-Netzwerk und dem Rest
+    des Internets. Wenn das Gerät lediglich zur Erweiterung deines lokalen
+    Netzwerks dienen soll, dann benötigst du diese Funktion nicht unbedingt.
+
+  %p
+    %strong Knoten auf der Karte anzeigen
+    ermöglicht die Anzeige deines Knotens auf unserer
+    %a( href="http://map.freifunk-duesseldorf.de" target="_blank" ) Karte.
+    Dazu gib die Koordinaten ein. Diese findest du beispielsweise bei
+    %a( href="https://www.google.de/maps" target="_blank" ) Google Maps
+    , wenn du auf die Stelle drei Mal schnell hintereinander klickst.
+
+  %p
+    In dem Feld
+    %strong Kontakt
+    trage bitte deine Mail-Adresse ein. Wenn du nicht deine private Anschrift
+    verwenden möchtest, empfehlen wir dir die Verwendung einer weiteren Mailbox
+    nur für diesen Zweck.
+
+  %p
+    Es gibt noch ein paar mehr Felder und Funktionen, die wir hier nicht
+    vollständig aufzählen möchten. Diese sollten selbsterklärend sein oder nur
+    für erfahrene Anwender interessant. Wenn du unten angekommen bist und
+    zufrieden mit den Eingaben, dann klicke auf "Fertig".
+
+  %p
+    Nun startet dein Knoten neu. Das Patchkabel kannst du entfernen oder dazu
+    verwenden, den Knoten mit der WAN-Buchse (blau) ans Netzwerk zu verbinden.
+    Das hat aber nur einen Zweck, wenn du im vorherigen Schritt das Mesh-VPN
+    aktiviert hast.
+
+  %p Fertig! Dein Knoten ist nun einsatzbereit. Solltest du einmal etwas ändern wollen, dann drücke so lange auf den Reset-Knopf des Knotens, bis er neu startet. Dann befindet sich dieser wieder im Config-Mode und du kannst alle Einstellungen verändern.
+
+  %h2 Aufstellen
+
+  %p
+    Den Freifunk-Knoten baust du am besten da auf, wo er gut erreichbar ist. Das
+    ist zum Beispiel auf der Fensterbank der Fall. Wenn das Kabel mit dem
+    Internet-Anschluss nicht bis dorthin reicht, dann nimm einfach mehrere Knoten,
+    so dass sie sich per WLAN verbinden.
+
+  %p
+    Freifunk-Knoten, die zu der selben Community gehören, verbinden sich auch
+    immer per WLAN. So reichen sie wie in einer Eimerkette die Daten von Punkt zu
+    Punkt weiter. Wer mag, kann mit größeren und speziellen Antennen diese
+    Verbindungen verbessern und die Reichweite erhöhen.
+
+  %p
+    Wir freuen uns, wenn du als neuer Freifunker zu unseren
+    %a(href="/kontakt") Treffen
+    kommst.

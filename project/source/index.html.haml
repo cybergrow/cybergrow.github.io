@@ -1,0 +1,59 @@
+---
+title: Freifunk Düsseldorf
+---
+
+:css
+  .videoWrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    padding-top: 25px;
+    height: 0;
+  }
+  .videoWrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  #main {
+    background-image: url("/images/photo.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+.jumbotron.text-center
+  %h1 Für ein freies Netz
+  %p Wir bauen ein urbanes Computer-Netzwerk in Düsseldorf
+  %hr
+  .row
+    .col-md-4
+      %i.fa.fa-arrow-circle-o-right.fa-3x
+      %p Das Netzwerk kann von jedem genutzt werden, ohne Anmeldung. Und das an immer mehr Orten.
+    .col-md-4
+      %i.fa.fa-rss.fa-3x
+      %p Verbinde dein Gerät einfach per WLAN. Dazu brauchst du keine spezielle Software.
+    .col-md-4
+      %i.fa.fa-child.fa-3x
+      %p Mach mit bei den Freifunkern und erweitere das Netzwerk mit deinen eigenen Geräten.
+
+.jumbotron.text-center
+  %h1 Mitmachen
+  %p Stelle deinen eigenen Knoten auf, verbinde dich ans Freifunk-Netzwerk und richte die Antennen aus!
+  %hr
+  .row
+    .col-md-6
+      %h2 Anleitung
+      %p Lies unsere Anleitung, wie du Schritt für Schritt einen eigenen Freifunk-Knoten aufbauen kannst.
+      %a.btn.btn-primary(href="/anleitung") Anleitung
+    .col-md-6
+      %h2 Kontakt
+      %p Wir laden dich zu unseren Treffen ein. Komm einfach vorbei und melde dich im Forum an.
+      %a.btn.btn-primary(href="/kontakt") Kontakt
+
+.jumbotron.text-center
+  .row.videoWrapper
+    %iframe( src="//player.vimeo.com/video/64814620" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen )
+
+%p.pull-right
+  %a( href="https://secure.flickr.com/photos/20792787@N00/4016700157" ) Photo by jaime.silva
